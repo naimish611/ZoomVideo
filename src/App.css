@@ -452,10 +452,11 @@ body {
 }
 
 /* Footer */
+
 .footer {
-  border-top: 1px solid #333;
-  padding: 40px 0;
-  background-color: var(--bg-card);
+  padding: 20px 0;
+  background: #111;
+  color: white;
 }
 
 .footer-flex {
@@ -464,16 +465,35 @@ body {
   align-items: center;
 }
 
-.footer-logo {
-  font-weight: bold;
-  font-size: 1.2rem;
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
   color: white;
 }
 
-.footer-copy {
-  color: #666;
-  font-size: 0.9rem;
+/* YOUTUBE HOVER */
+.youtube:hover svg {
+  background: linear-gradient(45deg, #ff0000, #ff5f5f);
+  -webkit-background-clip: text;
+  /* color: transparent; */
+  transform: scale(1.2);
 }
+
+/* INSTAGRAM HOVER */
+.instagram:hover svg {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  -webkit-background-clip: text;
+  /* color: transparent; */
+  transform: scale(1.2);
+}
+
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {

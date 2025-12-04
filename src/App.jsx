@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   Menu, X, Film, Camera, Tv, Radio, MapPin, 
-  MessageCircle, Heart, Play, MonitorPlay 
+  MessageCircle, Heart, Play, MonitorPlay,Youtube, Instagram
 } from 'lucide-react';
 import { motion } from 'framer-motion'; 
 import "./App.css";
@@ -292,14 +292,38 @@ export default function App() {
       </motion.section>
 
       {/* FOOTER */}
-      <footer className="footer">
-        <div className="container footer-flex">
-          <div className="footer-logo">Zoom Video Editing</div>
-          <div className="footer-copy">
-            © {new Date().getFullYear()} All rights reserved.
-          </div>
-        </div>
-      </footer>
+    <footer className="footer">
+  <div className="container footer-flex">
+    
+    <div className="footer-logo">Zoom Video Editing</div>
+
+    {/* Social Icons */}
+    <div className="footer-social">
+      <a
+        href="https://www.youtube.com/@zoomvideoediting3438"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="social-icon youtube"
+      >
+        <Youtube size={26} />
+      </a>
+
+      <a
+        href="https://www.instagram.com/kapil_umaretiya_patel?igsh=N2c1MDE0bmxhYmNv"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="social-icon instagram"
+      >
+        <Instagram size={26} />
+      </a>
+    </div>
+
+    <div className="footer-copy">
+      © {new Date().getFullYear()} All rights reserved.
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 }
