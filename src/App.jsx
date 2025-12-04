@@ -5,8 +5,71 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion'; 
 import "./App.css";
+import { Helmet } from "react-helmet";
+
 
 export default function App() {
+
+  <Helmet>
+  {/* BASIC SEO */}
+  <title>Zoom Video Editing – Pre Wedding | Short Films | Junagadh</title>
+  <meta
+    name="description"
+    content="Zoom Video Editing based in Junagadh. Expert in Pre Wedding, Short Films, Documentaries, Highlights, TV Ads, Live Telecast & Professional Video Editing."
+  />
+  <meta
+    name="keywords"
+    content="Video Editing Junagadh, Pre Wedding Shoot, Short Film Editing, Video Editor Gujarat, Zoom Video Editing, Wedding Videos, Live Telecast, Documentary Editing"
+  />
+
+  {/* OG SOCIAL SHARE */}
+  <meta property="og:title" content="Zoom Video Editing – Professional Video Solutions" />
+  <meta
+    property="og:description"
+    content="We create cinematic videos: Pre-Wedding, Short Films, Highlights, Documentaries, TV Ads and more."
+  />
+  <meta property="og:image" content="https://placehold.co/1200x630" />
+  <meta property="og:url" content="https://zoomvideoediting.com" />
+  <meta property="og:type" content="website" />
+
+  {/* TWITTER CARD */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zoom Video Editing – Professional Video Solutions" />
+  <meta
+    name="twitter:description"
+    content="Cinematic Pre-Wedding, Short Films, Highlights, Documentaries and Professional Editing."
+  />
+  <meta name="twitter:image" content="https://placehold.co/1200x630" />
+
+  {/* FAVICON */}
+  <link rel="icon" href="/favicon.ico" />
+
+  {/* LOCAL BUSINESS SCHEMA */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Zoom Video Editing",
+      image: "https://placehold.co/600x400",
+      "@id": "https://zoomvideoediting.com",
+      url: "https://zoomvideoediting.com",
+      telephone: "+91 8000145566",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Saibaba Society",
+        addressLocality: "Junagadh",
+        addressRegion: "Gujarat",
+        postalCode: "362001",
+        addressCountry: "IN",
+      },
+      sameAs: [
+        "https://www.youtube.com/@zoomvideoediting3438",
+        "https://www.instagram.com/kapil_umaretiya_patel"
+      ]
+    })}
+  </script>
+</Helmet>
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null);
